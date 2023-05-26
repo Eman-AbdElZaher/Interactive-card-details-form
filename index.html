@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+    <link rel="stylesheet" href="Css/style.css" />
+  </head>
+
+  <body>
+    <main class="card-details">
+      <div class="card-side">
+        <div class="card-front">
+          <img src="images/card-logo.svg" alt="card-logo" />
+          <p class="card_number">0000 0000 0000 0000</p>
+          <div class="card_info">
+            <span class="card-name-owner">Jane Appleseed</span>
+            <span class="exp_date">00/00</span>
+          </div>
+        </div>
+        <div class="card-back">
+          <p>000</p>
+        </div>
+      </div>
+      <div class="card-form">
+        <form action="post">
+          <div class="input-field">
+            <label for="card-name" class="card__label">Cardholder Name</label>
+            <input
+              type="text"
+              id="card-name"
+              class="card__input"
+              placeholder="e.g. Jane Appleseed"
+              required
+            />
+          </div>
+          <div class="input-field">
+            <label for="card-number" class="card__label">Card Number</label>
+            <input
+              type="text"
+              id="card-number"
+              class="card__input"
+              placeholder="e.g. 1234 5678 9123 0000"
+              maxlength="19"
+              required
+            />
+          </div>
+          <div class="input-field">
+            <div class="label">
+              <label for="Expiration" class="card__label"
+                >Exp. Date (MM/YY)</label
+              >
+              <label for="cvc" class="card__label">cvc</label>
+            </div>
+            <div class="bottom-inputs">
+              <input
+                type="text"
+                id="month"
+                placeholder="MM"
+                maxlength="2"
+                required
+              />
+              <input
+                type="text"
+                id="year"
+                placeholder="YY"
+                maxlength="2"
+                required
+              />
+              <input
+                type="text"
+                id="cvc"
+                placeholder="e.g. 123"
+                maxlength="3"
+                required
+              />
+            </div>
+          </div>
+          <button>confirm</button>
+        </form>
+      </div>
+    </main>
+
+    <!-- Thank you! We've added your card details Continue -->
+  </body>
+</html>
