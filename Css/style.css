@@ -239,4 +239,7 @@ button {
     width: 90%;
     height: 22rem;
   }
+  section.completed {
+    margin-top: 50px;
+  }
 }
